@@ -3,18 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Accueil - BTS SIO</title>
+    <title>Données - Application-Client-Serveur</title>
     <link rel="stylesheet" href="../css/bootstrap4.min.css">
     <link rel="stylesheet" href="../css/mainv2.css">
     <link rel="stylesheet" href="../css/wireframe-theme.min.css">
     <script class="picturefill" async="async" src="../js/picturefill.min.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/datatable.min.css" />
-    <!-- Core -->
-    <link rel="stylesheet" href="../css/datatable.css" />
-    <script src="../js/datatable.js"></script>
-    <!-- Local File -->
-    <script src="../js/locales.js"></script>
     <link rel="shortcut icon" href="../img/XEFI.png">
 </head>
 <body style="font-size: 12pt;">
@@ -34,7 +29,7 @@
 </div>
 <br />
 
-<div class="container mt-4">
+<div class="container mt-4" style="padding-bottom: 30px;">
     <div class="card">
         <div class="card-header">
             <b>Rechercher un utilisateur</b>
@@ -44,6 +39,20 @@
         </div>
     </div>
 </div>
+<div class="row wecome-row " style="height: 10px">
+    <div class="col-xs-12">
+        <div class="subgrid action-subgrid">
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="paragraph action-paragraph"></p>
+                </div>
+                <div class="col-xs-12 col-md-6" style="color: white">© Julien SEUX | Tous droits Réservés
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 @livewireScripts
+
 </html>

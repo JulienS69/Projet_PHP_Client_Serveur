@@ -11,7 +11,7 @@ class Filter extends Component
     use WithPagination;
 
     public $searchTerm;
-
+    protected $paginationTheme = "bootstrap";
     public $currentPage = 1;
 
     public function render()

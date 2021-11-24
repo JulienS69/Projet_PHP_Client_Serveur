@@ -6,7 +6,7 @@
               <br />
               <table class="table table-bordered" style="margin: 10px 0 10px 0;">
                   <tr>
-                      <th>ID</th>
+                      <th>ID de l'utilisateur</th>
                       <th>Nom</th>
                       <th>Prenom</th>
                       <th>Adresse</th>
