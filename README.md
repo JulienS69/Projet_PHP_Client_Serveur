@@ -13,11 +13,15 @@ Projet Client Serveur PHP
 - Pour ce faire, vous devez allez dans votre bdd, copiez coller le script SQL disponible à cette adresse : http://gofile.me/4pwZa/Al7O2augO (le mot de passe est "**projet**").
 - Ensuite, faire un **git clone** du projet sur votre bureau. 
 - Lancer le projet via un IDE (PhpStorm, Visual Studio Code ...)
-- Renommer le fichier **.env.example** par **.env**
+- Vérifiez que vous ayez **Composer** d'installer à la racine du projet ou sur votre OS. Il est nécessaire pour installer les dépendances.
+- Si vous ne l'avez pas télécharger le ici : https://getcomposer.org/download/
+- Si vous l'avez déjà tapez la commande suivante dans le terminal du projet "**composer install**" puis patientez.
+- Ensuite renommer le fichier **.env.example** par **.env**
 - Completer la ligne "**DB_DATABASE**" par "**DB_DATABASE=Client**"
 - Dans le terminal, tapez la commande "**php artisan key:generate**" afin de générer la clé du fichier environnement.
 - Enfin, dans le terminal, tapez la commande "**php artisan serve**" afin de lancer le serveur web.
-
+- J'ai préparé une vidéo youtube (tuto) qui vous permettra d'avoir un aperçu concret sur les étapes d'installation du projet si çe n'est pas assez clair pour vous.
+- URL de la vidéo : https://youtu.be/pgjGD_ctZS4
 ## A propos de l'application web
 
 - Le projet consiste à réaliser une application client-serveur de recherche client.
