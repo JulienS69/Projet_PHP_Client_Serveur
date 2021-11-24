@@ -39,7 +39,8 @@ Projet Client Serveur PHP
 - L'indexation des données se fait via le controller de notre vue.
 - Lors de la saisie de texte dans la barre de recherche, une requête est envoyée à l'api par Livewire*, un json est retourné et notre recherche est désormais filtré. (Voir photo ci-dessous)
 
-<p align="start"><img src="https://i.ibb.co/5FqnF81/Capture-d-cran-2021-11-24-154801.png" width="400"></p>
-<p align="end"><img src="https://i.ibb.co/kybwGfW/Capture-d-cran-2021-11-24-1503.png" width="400"></p>
+<a href="https://ibb.co/3ztMzNT"><img src="https://i.ibb.co/5FqnF81/Capture-d-cran-2021-11-24-154801.png" alt="Capture-d-cran-2021-11-24-154801" border="0"></a>
+<br></br>
+<a href="https://ibb.co/GJY8dLb"><img src="https://i.ibb.co/kybwGfW/Capture-d-cran-2021-11-24-1503.png" alt="Capture-d-cran-2021-11-24-1503" border="0"></a>
 
 
