@@ -1,65 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<p align="center"><img src="https://i.ibb.co/7Rk2S7f/Capture-d-cran-2021-11-24-140018.png" width="200"></p>
+ 
+<p align="center" style="font-weight: bold">
+Projet Client Serveur PHP
 </p>
+<p align="center"><img src="https://i.ibb.co/2K6jrdv/Capture-d-cran-2021-11-24-152754s.png" width="400"></p>
 
-## About Laravel
+## Installation
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Pour faire fonctionner l'application, vous devez tout d'abord créer la base de données locale via un serveur (MariaDB, PHPMyAdmin, SQLServeur...) appelé la "**Client**"
+- Pour faire fonctionner l'application, il faut dès à présent remplir la base de données.
+- Pour ce faire, vous devez allez dans votre bdd, copiez coller le script SQL disponible à cette adresse : http://gofile.me/4pwZa/Al7O2augO (le mot de passe est "**projet**").
+- Ensuite, faire un **git clone** du projet sur votre bureau. 
+- Lancer le projet via un IDE (PhpStorm, Visual Studio Code ...)
+- Renommer le fichier **.env.example** par **.env**
+- Completer la ligne "**DB_DATABASE**" par "**DB_DATABASE=Client**"
+- Dans le terminal, tapez la commande "**php artisan key:generate**" afin de générer la clé du fichier environnement.
+- Enfin, dans le terminal, tapez la commande "**php artisan serve**" afin de lancer le serveur web.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## A propos de l'application web
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Le projet consiste à réaliser une application client-serveur de recherche client.
+- La bdd est créée à partir d'un script SQL. Ce script récupère 500 000 clients.
+- L'objectif de celle-ci est de pouvoir effectuer la recherche de client dans la bdd via un Web Service comprenant une pagination.
 
-## Learning Laravel
+## Frameworks et langage utilisés
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Les langages utilisés sont : **PHP**, **HTML**, **CSS3**
+- Les frameworks utilisés pour construire l'application web sont : **Laravel** et **Livewire**.
+- Laravel est un framework php qui m'a permis de construire mon architecture. Ce framework utilise le modèle **MVC** (Modèle, Vue, Controller)
+- Livewire m'a permis de pouvoir filtrer ma recherche dynamiquement et ce framework est un web service qui requête la base de données.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<p align="center"><img src="https://i.ibb.co/6DNj9kx/laravel-livewire.png" width="400"></p>
 
-## Laravel Sponsors
+## Fonctionnement de l'application
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Pour effectuer une recherche de client, vous devez vous rendre dans l'onglet "**Accéder aux données**" et effectuer la recherche.
+- L'indexation des données se fait via le controller de notre vue.
+- Lors de la saisie de texte dans la barre de recherche, une requête est envoyée à l'api par Livewire*, un json est retourné et notre recherche est désormais filtré. (Voir photo ci-dessous)
 
-### Premium Partners
+<p align="start"><img src="https://i.ibb.co/CJcy4Yh/Capture-d-cran-2021-11-24-150833.png" width="400"></p>
+<p align="end"><img src="https://i.ibb.co/z5PRtPP/Capture-d-cran-2021-11-24-1503.png" width="400"></p>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
